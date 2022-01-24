@@ -1,0 +1,12 @@
+.about {
+  text-align: center;
+}
+
+.container {
+  background-color: #dbdbdb;
+  width: 250px;
+  margin: 0 auto;
+}
+.container p {
+  color: #212529;
+}
