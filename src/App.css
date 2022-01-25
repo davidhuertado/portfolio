@@ -12,6 +12,9 @@ h1 {
   font-family: 'Poppins', sans-serif;
   color: #cecece;
 }
+.App {
+  padding: 0 20px;
+}
 .h2 {
   font-size: 2rem;
   margin-bottom: 40px;

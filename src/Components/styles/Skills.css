@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 120px;
 }
 .skills .h2 {
   font-size: 2rem;
@@ -10,7 +11,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 125px);
-  width: 300px;
+  /* width: 300px; */
   gap: 20px;
   justify-content: center;
 }

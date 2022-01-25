@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero">
       <div className="hero-wrapper">
         <h1 className="hero-title">David Hurtado</h1>
-        <h2 className="hero-sub">Frontend web developer</h2>
+        <h2 className="h2">Frontend web developer</h2>
         <div className="icons">
           <a href="test">
             <i className="fab fa-github-square icon" />
