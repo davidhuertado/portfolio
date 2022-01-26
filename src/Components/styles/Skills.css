@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   margin-bottom: 120px;
+  margin-top: 100px;
 }
 .h2 {
   /* font-size: 1.35em; */
@@ -10,7 +11,7 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 125px);
+  grid-template-columns: repeat(2, 150px);
   /* width: 300px; */
   gap: 20px;
   justify-content: center;

@@ -30,7 +30,12 @@ const projects = [
 
 function Projects() {
   const renderedProjects = projects.map((project) => (
-    <Card title={project.title} info={project.info} img={project.img} />
+    <Card
+      title={project.title}
+      info={project.info}
+      img={project.img}
+      id={project.title}
+    />
   ));
   return (
     <section className="projects">

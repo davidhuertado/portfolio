@@ -119,6 +119,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
+    padding-top: 200px;
   }
   .icons {
     margin: 0 5px;
