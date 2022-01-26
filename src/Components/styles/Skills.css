@@ -4,8 +4,8 @@
   flex-direction: column;
   margin-bottom: 120px;
 }
-.skills .h2 {
-  font-size: 2rem;
+.h2 {
+  /* font-size: 1.35em; */
   margin-bottom: 40px;
 }
 .grid {
@@ -43,4 +43,28 @@
 }
 .linux-logo {
   grid-area: 6 / 1 / 6 / 2;
+}
+
+@media screen and (min-width: 576px) {
+  .skills {
+    font-size: 1.3rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 900px;
+  }
+  .skills {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .grid {
+    max-width: 1200px;
+  }
 }

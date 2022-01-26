@@ -11,7 +11,7 @@ import webpack from '../assets/img/webpack.svg';
 
 function Skills() {
   return (
-    <section className="skills">
+    <section id="Skills" className="skills">
       <h2 className="h2">Skills</h2>
       <div className="grid">
         <a

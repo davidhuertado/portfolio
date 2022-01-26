@@ -7,7 +7,7 @@ import shorteningImg from '../assets/img/projects/shortening.png';
 import timeTrackingImg from '../assets/img/projects/timeTracking.png';
 import splitterImg from '../assets/img/projects/splitter.png';
 
-const projectsArray = [
+const projects = [
   {
     title: 'Shortly',
     info: 'Landing page of an app that allows to shortening URL. Made with React Hooks and sessionStorage. REST API',
@@ -29,26 +29,13 @@ const projectsArray = [
 ];
 
 function Projects() {
+  const renderedProjects = projects.map((project) => (
+    <Card title={project.title} info={project.info} img={project.img} />
+  ));
   return (
     <section className="projects">
       <h2 className="h2">Projects</h2>
-      <div className="projects-wrapper">
-        <Card
-          title={projectsArray[0].title}
-          info={projectsArray[0].info}
-          img={projectsArray[0].img}
-        />
-        <Card
-          title={projectsArray[1].title}
-          info={projectsArray[1].info}
-          img={projectsArray[1].img}
-        />
-        <Card
-          title={projectsArray[2].title}
-          info={projectsArray[2].info}
-          img={projectsArray[2].img}
-        />
-      </div>
+      <div className="projects-wrapper">{renderedProjects}</div>
     </section>
   );
 }

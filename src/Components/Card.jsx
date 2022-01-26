@@ -5,10 +5,14 @@ import './styles/Card.css';
 function Card({ title, info, img }) {
   return (
     <div className="card">
-      <img src={img} className="card-img" alt={title} />
+      <div className="img-container">
+        <img src={img} className="card-img" alt={title} />
+      </div>
       <div className="card-text">
         <h3 className="title">{title}</h3>
-        <p className="info">{info}</p>
+        <div className="info-container">
+          <p className="info">{info}</p>
+        </div>
       </div>
     </div>
   );

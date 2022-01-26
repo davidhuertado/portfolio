@@ -6,10 +6,10 @@
 }
 
 .hero-title {
-  font-size: 40px;
+  font-size: 2.5em;
 }
-.hero-sub {
-  font-size: 20px;
+.hero .h2 {
+  font-size: 1.5em;
   font-weight: 400;
 }
 .icons {
@@ -24,9 +24,121 @@
 }
 .icons .fab {
   color: #cecece;
+  font-size: 1em;
+}
+#arrowAnim {
+  /* width: 200px;
+  height: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: 3px solid;
+  border-color: #fff transparent transparent #fff;
+  transform: rotate(-45deg);
+}
+
+.arrowSliding {
+  position: absolute;
+  -webkit-animation: slide 4s linear infinite;
+  animation: slide 4s linear infinite;
+}
+
+.delay1 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay2 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.delay3 {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(15vh);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(9vh);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-9vh);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15vh);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(15vh);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(9vh);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-9vh);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-15vh);
+  }
+}
+@media screen and (min-width: 576px) {
+  .icons {
+    margin: 0 15px;
+  }
+  .icons .fab {
+    font-size: 1.3em;
+  }
 }
 @media screen and (min-width: 992px) {
+  .hero {
+    /* margin-top: 200px; */
+    margin-bottom: 250px;
+  }
   .hero-wrapper {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .icons {
+    margin: 0 5px;
+  }
+  .icons a {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .hero .h2 {
+    margin-left: 2px;
+  }
+  .hero {
+    margin-bottom: 50px;
+  }
+  .arrow-container {
+    align-self: center;
+    height: 250px;
+    width: 100px;
+    cursor: pointer;
+    /* position: relative;
+    position: relative; */
   }
 }

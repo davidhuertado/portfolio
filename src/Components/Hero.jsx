@@ -15,6 +15,24 @@ function Hero() {
             <i className="fab fa-linkedin" />
           </a>
         </div>
+        <a href="#Skills">
+          <div className="arrow-container">
+            <div id="arrowAnim">
+              <div className="arrowSliding">
+                <div className="arrow" />
+              </div>
+              <div className="arrowSliding delay1">
+                <div className="arrow" />
+              </div>
+              <div className="arrowSliding delay2">
+                <div className="arrow" />
+              </div>
+              <div className="arrowSliding delay3">
+                <div className="arrow" />
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
   );
