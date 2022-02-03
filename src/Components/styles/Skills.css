@@ -11,7 +11,7 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 150px);
+  grid-template-columns: repeat(3, 1fr);
   /* width: 300px; */
   gap: 20px;
   justify-content: center;
@@ -19,18 +19,11 @@
 
 .child {
   /* width: 100px; */
-  background-color: #cecece;
   padding: 10px;
   border-radius: 2%;
   cursor: pointer;
 }
 .child:hover {
-  z-index: 2;
-  position: relative;
-  transition: all 0.25s;
-  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.3),
-    0 1rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translate(0, -0.5rem) scale(1.01);
 }
 
 .child img {
@@ -38,10 +31,10 @@
   height: auto;
 }
 
-.git-logo,
+/* .git-logo,
 .webpack-logo {
   grid-column: span 2;
-}
+} */
 .linux-logo {
   grid-area: 6 / 1 / 6 / 2;
 }
