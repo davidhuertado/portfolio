@@ -12,46 +12,55 @@ import linux from '../assets/img/linux-white.svg';
 
 const icons = [
   {
+    name: 'HTML',
     src: html,
     href: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     className: 'html-logo',
   },
   {
+    name: 'CSS',
     src: css,
     href: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     className: 'css-logo',
   },
   {
+    name: 'JavaScript',
     src: js,
     href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     className: 'js-logo',
   },
   {
+    name: 'Bootstrap',
     src: bootstrap,
     href: 'https://getbootstrap.com/',
     className: 'bootstrap-logo',
   },
   {
+    name: 'React',
     src: react,
     href: 'https://reactjs.org/',
     className: 'react-logo',
   },
   {
+    name: 'Git',
     src: git,
     href: 'https://git-scm.com/',
     className: 'git-logo',
   },
   {
+    name: 'Linux',
     src: linux,
     href: 'https://en.wikipedia.org/wiki/Linux',
     className: 'linux-logo',
   },
   {
+    name: 'Webpack',
     src: webpack,
     href: 'https://webpack.js.org/',
     className: 'webpack-logo',
   },
   {
+    name: 'Sass',
     src: sass,
     href: 'https://sass-lang.com/',
     className: 'sass-logo',
@@ -59,8 +68,9 @@ const icons = [
 ];
 
 function Skills() {
-  const renderedIcons = icons.map(({ href, src, className }) => (
-    <a href={href} className={`child ${className}`} key={src}>
+  const renderedIcons = icons.map(({ href, src, className, name }) => (
+    <a href={href} className={`child tooltip top ${className}`} key={src}>
+      <span className="tiptext">{name}</span>
       <img src={src} alt={src} />
     </a>
   ));
@@ -68,6 +78,11 @@ function Skills() {
   return (
     <section id="Skills" className="skills">
       <h2 className="h2">Skills</h2>
+      <p className="skills-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        molestias perspiciatis, ullam explicabo ducimus beatae hic ratione iure
+        iusto soluta sequi vero exercitationem ut! Tempore.
+      </p>
       <div className="grid">
         {renderedIcons}
         {/* <a

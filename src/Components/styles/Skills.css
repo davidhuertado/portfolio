@@ -4,6 +4,7 @@
   flex-direction: column;
   margin-bottom: 120px;
   margin-top: 100px;
+  text-align: center;
 }
 .h2 {
   /* font-size: 1.35em; */
@@ -12,53 +13,92 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* width: 300px; */
-  gap: 20px;
+  max-width: 300px;
+  gap: 10px;
   justify-content: center;
 }
 
 .child {
-  /* width: 100px; */
+  display: flex;
   padding: 10px;
   border-radius: 2%;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
-.child:hover {
+.child:hover img {
+  opacity: 20%;
 }
 
 .child img {
   max-width: 100%;
   height: auto;
+  opacity: 60%;
 }
-
-/* .git-logo,
-.webpack-logo {
-  grid-column: span 2;
-} */
-.linux-logo {
-  grid-area: 6 / 1 / 6 / 2;
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+.tooltip .tiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.tooltip .tiptext::after {
+  content: '';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+.tooltip.top .tiptext {
+  margin-left: -60px;
+  bottom: 100%;
+  left: 50%;
+}
+.tooltip.top .tiptext::after {
+  margin-left: -5px;
+  top: 100%;
+  left: 50%;
+  border-color: #000 transparent transparent transparent;
+}
+.skills-text {
+  color: #cecece;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0 10% 30px;
 }
 
 @media screen and (min-width: 576px) {
   .skills {
     font-size: 1.3rem;
   }
-  .grid {
-    grid-template-columns: repeat(2, 150px);
-  }
 }
 
 @media screen and (min-width: 992px) {
   .grid {
-    grid-template-columns: repeat(5, 1fr);
-    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
   }
   .skills {
     margin-bottom: 200px;
   }
+  .skills-text {
+    padding: 0 20% 30px;
+  }
 }
 @media screen and (min-width: 1350px) {
   .grid {
-    max-width: 1200px;
+    max-width: 700px;
   }
 }
